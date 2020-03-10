@@ -1,0 +1,50 @@
+.wrapper__posts_new
+  .cover.py-2.main-header
+    .container
+      .row.new-main__header-box
+        %ul.col-6
+          %li
+            = link_to "https://twitter.com" do
+              = icon('fab', 'twitter-square', class: 'icon twitter-icon')
+          %li
+            = link_to "https://www.facebook.com/" do
+              = icon('fab', 'facebook-square', class: 'icon fb-icon')
+        %ul.col-6.header__left-icons
+          %li
+          = link_to destroy_user_session_path, :method => 'delete' do
+            = icon('fas', 'bed', class: 'icon bed-icon')
+          %li
+          = link_to edit_user_registration_path do
+            = icon('fas', 'pen-fancy', class: 'icon pen-icon')
+          %li
+          = link_to user_path(current_user) do
+            = icon('fas', 'book', class: 'icon book-icon')
+  .main-container
+    .main-container__img
+      .main-container__message.rainbow_txt Good Discovery!!
+      #ship-icon.main-container__icon
+        = image_tag "ship8.png",class:'ship-icon shake-vertical'
+
+  %svg.editorial{:preserveaspectratio => "none", :viewbox => "0 24 150 28 ", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
+    %defs
+      %path#gentle-wave{:d => "M-160 44c30 0 \n    58-18 88-18s\n    58 18 88 18 \n    58-18 88-18 \n    58 18 88 18\n    v44h-352z"}
+    %g.parallax1
+      %use{:fill => "#2d95ff", :x => "50", "xlink:href" => "#gentle-wave", :y => "3"}
+    %g.parallax2
+      %use{:fill => "#0080ff", :x => "50", "xlink:href" => "#gentle-wave", :y => "0"}
+    %g.parallax3
+      %use{:fill => "#006ad5", :x => "50", "xlink:href" => "#gentle-wave", :y => "9"}
+    %g.parallax4
+      %use{:fill => "#0055aa", :x => "50", "xlink:href" => "#gentle-wave", :y => "6"}
+
+  .main-form
+    = form_with model: @post, local: true, id:"new_post" do |f|
+      .main-form__box
+        .main-form__box__textarea
+          =f.text_field :content, class:"main-form__box__textarea__content form-controll", placeholder:"Write about events you thanked!"
+        .main-form__box__label
+          = f.label :image, class: "main-form__box__image" do
+            = icon('fa', 'image',class: "main-form__box__image__icon")
+            = f.file_field :image, class: "main-form__box__image__file"
+        =f.submit "Save", class: "btn btn-info ml-3 px-4 main-form__btn"
+

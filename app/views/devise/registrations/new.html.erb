@@ -1,0 +1,40 @@
+<div class="user-form-wrapper">
+  <div class="form-sheet mt-5 p-5">
+    <h2 class="form-title mb-4">Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field form-group">
+        <%= f.label :nickname, class:"form-text" %>
+        <em class="form-caution">(8characters maximum)</em>
+        <%= f.text_field :nickname, class:"form-control", autofocus: true %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :email, class:"form-text" %>
+        <%= f.email_field :email, class:"form-control", autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :password, class:"form-text" %>
+        <% if @minimum_password_length %>
+        <em class="form-caution">(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %>
+        <%= f.password_field :password,class:"form-control", autocomplete: "new-password" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :password_confirmation, class:"form-text" %>
+        <%= f.password_field :password_confirmation,class:"form-control", autocomplete: "new-password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "OK", class:"btn px-4 mt-4 form-btn"  %>
+      </div>
+    <% end %>
+
+
+    <%= image_tag 'sign-up.png', class:"form-img form-img--pen" %>
+  </div>
+</div>

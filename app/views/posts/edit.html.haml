@@ -1,0 +1,15 @@
+.index__wrapper
+  .index__sheet.mt-3
+    .index__sheet__box
+      %h2.index__sheet__title.my-5 Edit log
+      .show-box
+        = form_with model: @post, local: true do |f|
+          .edit-form__textarea.form-group
+            =f.label "Type a new text",class:"edit-form__text"
+            =f.text_area :content, class:"edit-form__textarea__content form-control mb-5", placeholder:"Write about events you thanked!"
+          .edit-form__label.mb-5
+            =f.label "Choose a photo",class:"edit-form__text"
+            = f.label :image, class: "edit-form__image pl-5" do
+              = icon('fa', 'image',class: "edit-form__image__icon")
+              = f.file_field :image, class: "edit-form__box__image__file invisible"
+          =f.submit "Save", class: "btn btn-dark px-4 edit-form__btn"

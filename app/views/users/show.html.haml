@@ -1,0 +1,25 @@
+.index__wrapper
+  .index__sheet.mt-3
+    .index__sheet__box
+      %h2.index__sheet__title.mt-4.mb-4 #{@nickname}'s thanks logs
+      
+      - @posts.each do |post|
+        .index__content
+          .index__content__left
+            -if post.image?
+              .index__content__left--image
+                = icon('fas', 'images', class: 'image-icon pt-1')
+
+          .index__content__right
+            = link_to post_path(post.id) do
+              .index__content__right__top.py-2
+                = post.content
+              .index__content__right__bottom
+                = post.created_at.to_s(:datetime_jp)
+
+      = paginate(@posts)
+      .redirect
+        = link_to new_post_path do
+          %p.redirect__text.mt-3.text-center Return to ship
+
+

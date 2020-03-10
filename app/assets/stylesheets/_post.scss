@@ -1,0 +1,235 @@
+// new画面
+.wrapper__posts_new {
+  width: 100vw;
+  height: 100vh;
+  .main-header{
+    background: #472b0e;
+  }
+  .new-main__header-box{
+    align-items: center;
+  }
+  ul{
+    margin: 0;
+  }
+  li{
+    display: inline-block;
+  }
+  .icon{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    color: #fff;
+  }
+  .header__left-icons{
+    text-align: right;
+  }
+  .main-container{
+    height: 81.5%;
+    width: 100%;
+    &__img{
+      height: 100%;
+      width: 100%;
+      background: url('post-main.jpg');
+      background-size: cover;
+      position: relative;
+    }
+    &__message{
+      font-size: 5rem;
+      text-align: center;
+      line-height: 500px;
+      display: none
+    }
+    &__icon{
+      position: absolute;
+      bottom:0.8rem;
+      left:43%;
+    }
+  }
+}
+
+.main-form{
+  height: 71px;
+  width: 100%;
+  background: #472b0e;
+  padding: 15px 40px;
+  position: fixed;
+  bottom: 0;
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    &__textarea{
+      width: 100%;
+      position: relative;
+      &__content{
+        height: 50px;
+        width: 100%;
+        padding: 0 60px 0 10px;
+        color: #434a54;
+        border-style: none;
+        border-radius: 5px;
+      }
+    }
+    &__image{
+      position: absolute;
+      top: 20px;
+      right: 170px;
+      font-size: 25px;
+      &__file{
+        display: none;
+      }
+    }
+  }
+}
+
+// index画面
+.index__wrapper{
+  width: 100vw;
+  height: 100vh;
+  background: url('user-form-bgi');
+  background-size: cover;
+  position: fixed;
+  .index__sheet{
+    width: 100%;
+    height: 100%;
+    margin: 10% 0 0 5%;
+    background: url('post-index');
+    background-size: cover;
+    position:
+    relative;
+    position: fixed;
+    &__box{
+      height: 90%;
+      width: 33%;
+      margin: 3rem 0 0 10%;
+      padding: 10px;
+    }
+  }
+  .index__sheet__title{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.5rem;
+  }
+  .index__content{
+    display: flex;
+    border-bottom: 1px dashed #969595;
+    width: 100%;
+    height: 14.5%;
+    &__left{
+      width: 10%;
+      &--image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-icon{
+        font-size: 1.5rem;
+      }
+    }
+    &__right{
+      width: 90%;
+      height: 100%;
+      position: relative;
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+      &__top{
+        margin: 0;
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-size: 1rem;
+        word-wrap: break-word;
+        height: 80%;
+        overflow: scroll;
+        white-space: wrap;
+      }
+      &__bottom{
+        width: 100%;
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: block;
+  text-align: center;
+  a,span{
+    color: black;
+    text-decoration: none;
+    font-family: 'Fredericka the Great', cursive;
+  }
+}
+
+.redirect{
+  text-align: center;
+  width: 100%;
+  a{
+    text-decoration: none;
+  }
+  &__text{
+    color: black;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+}
+
+// show画面
+.show-box{
+  width: 100%;
+  height: 90%;
+  &__text{
+    word-wrap: break-word;
+    overflow: scroll;
+    white-space: wrap;
+    margin: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.2rem;
+    height: 20%;
+  }
+  &__date{
+    float: right;
+  }
+  .content_image{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    &__data{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .postManage{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    a{
+      text-decoration: none;
+      color: #000;
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 1.5rem;
+    }
+    &__edit{
+      padding-right: 20px;
+    }
+    &__return{
+      padding-right: 20px;
+    }
+  }
+}
+
+// edit画面
+.edit-form__text{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.2rem;
+}
+.edit-form__image__icon{
+    font-size:2rem;
+}
+.edit-form__btn{
+  background: #472b0e;
+  color: #fff;
+  font-family: 'Fredericka the Great', cursive;
+}

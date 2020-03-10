@@ -1,0 +1,13 @@
+.wrapper
+  .content
+    .text-center
+      %h1.mb-5
+        Thanks Journey
+    .sign-in.mb-4
+      = link_to new_user_registration_path, class:"btn btn-primary btn-lg btn-block" do
+        = icon('fas', 'pen-fancy', class: 'pen-icon')
+        Sign Up!
+    .log-in
+      = link_to new_user_session_path, class:"btn btn-info btn-lg btn-block faa-parent animated-hover" do
+        = icon('fas', 'anchor', class: 'anchor-icon')
+        Sign In!

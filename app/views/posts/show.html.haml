@@ -1,0 +1,17 @@
+.index__wrapper
+  .index__sheet.mt-3
+    .index__sheet__box
+      %h2.index__sheet__title.my-4 Log's detail
+      .show-box
+        %p.show-box__text
+          =@post.content
+        %p.show-box__date
+          =@post.created_at.to_s(:datetime_jp)
+        .content_image.pt-5
+          -if @post.image?
+            = image_tag "#{@post.image}", class: "content_image__data"
+        .postManage
+          = link_to "Edit", edit_post_path(@post), class: "postManage__edit"
+          = link_to "Delete", post_path(@post), method: :delete, class: "postManage__delete"
+        .postManage
+          = link_to "Return", user_path(current_user), class: "postManage__return" 

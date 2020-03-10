@@ -1,0 +1,68 @@
+.user-form-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background: url('user-form-bgi');
+  background-size: cover;
+  position: fixed;
+  .form-sheet{
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    height: 90%;
+    margin: 0 auto;
+    background: url('user-form');
+    background-size: cover;
+    position: relative;
+  }
+  .form-title{
+    font-family: $main_font;
+    font-size: 3rem;
+  }
+  .form-text{
+    font-family: $main_font;
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    &-3{
+      font-family: $main_font;
+      margin: 0;
+    }
+  }
+  em,i{
+    font-family: $main_font;
+  }
+  .form-caution{
+    font-family: $main_font;
+  }
+  .form-btn{
+    background: #472b0e;
+    color: #fff;
+    font-family: $main_font;
+  }
+  .form-img{
+    float: right;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    &--pen{
+      bottom: 10px;
+    }
+    &--compass{
+      right: 0;
+      bottom: 40px;
+    }
+    &--scope{
+      right: 0;
+      bottom: -20px;
+    }
+  }
+}
+#error_explanation{
+  ul{
+    font-size: 0.9rem;
+    margin: 0;
+    li{
+      display: inline-block;
+      padding: 0 0.5rem 0 0;
+    }
+  }
+}

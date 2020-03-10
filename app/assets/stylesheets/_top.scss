@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url("top.jpg");
+  background-size: cover;
+  background-position: center;
+  .content{
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      font-size: 6rem;
+      font-family: $main_font;
+      color: rgb(20, 20, 20);
+    }
+    .btn{
+      width: 10rem;
+      padding: 8px 25px 8px 10px;
+      font-family: $main_font;
+    }
+  }
+}
