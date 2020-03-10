@@ -6,6 +6,8 @@
 
   URL:https://thanks-journey.herokuapp.com/
   <img width="700" alt="スクリーンショット 2020-03-10 22 47 46" src="https://user-images.githubusercontent.com/59637985/76319184-2fc99780-6322-11ea-9fcd-af1c44b691aa.png">
+  <img width="700" alt="スクリーンショット 2020-03-10 23 12 26" src="https://user-images.githubusercontent.com/59637985/76321097-e595e580-6324-11ea-9e1a-e21eebcb3a7e.png">
+
 
 * 概要と目的
 
@@ -22,16 +24,19 @@
   Sign inで次のメールアドレスとパスワードを入力いただくとログインできます
   - メールアドレス   test@gmail.com
   - パスワード   testpass
-  <img width="700" alt="スクリーンショット 2020-03-10 22 57 39" src="https://user-images.githubusercontent.com/59637985/76319523-b1212a00-6322-11ea-8699-4eafd9b2e25b.png">
+  <img width="400" alt="スクリーンショット 2020-03-10 22 57 39" src="https://user-images.githubusercontent.com/59637985/76319523-b1212a00-6322-11ea-8699-4eafd9b2e25b.png">
 
 
 * アプリの機能紹介
    - トップ画面でユーザー登録をすると、記録したい内容を投稿できるメイン画面に移動します
    - 入力フォームでは、写真のアイコンをクリックして写真を選ぶことで、テキストと一緒に写真を投稿することができます
    - 投稿をすると、それを祝福するメッセージが出現し、船のアイコンが動きます
-   - <img width="700" alt="スクリーンショット 2020-03-10 22 50 21" src="https://user-images.githubusercontent.com/59637985/76320163-9d29f800-6323-11ea-94a2-b9a628a3f41f.gif">
+
+  <img width="700" alt="スクリーンショット 2020-03-10 22 50 21" src="https://user-images.githubusercontent.com/59637985/76320163-9d29f800-6323-11ea-94a2-b9a628a3f41f.gif">
+
    - 投稿は本のアイコンから一覧でき、各投稿は編集、削除ができます
-   - <img width="700" alt="スクリーンショット 2020-03-10 22 50 21" src="https://user-images.githubusercontent.com/59637985/76319273-5556a100-6322-11ea-9662-f2beac6ee554.png">
+
+  <img width="700" alt="スクリーンショット 2020-03-10 22 50 21" src="https://user-images.githubusercontent.com/59637985/76319273-5556a100-6322-11ea-9662-f2beac6ee554.png">
    - ペンのアイコンからはユーザー情報の編集ができます
    - ベッドのアイコンはログアウトです
    - Twitter・Facebookへのリンクは、素敵な感謝のエピソードがあった場合には、SNSでも発信していただきたいという思いから設置しています
