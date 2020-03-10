@@ -3,6 +3,7 @@
 ### アプリ名  Thanks Journey
 
   URL:https://thanks-journey.herokuapp.com/
+  ※レスポンシブデザインにはまだ対応できていないため、パソコン画面でご覧ください
   <img width="700" alt="スクリーンショット 2020-03-10 22 47 46" src="https://user-images.githubusercontent.com/59637985/76319184-2fc99780-6322-11ea-9fcd-af1c44b691aa.png">
   <img width="700" alt="スクリーンショット 2020-03-10 23 12 26" src="https://user-images.githubusercontent.com/59637985/76321097-e595e580-6324-11ea-9e1a-e21eebcb3a7e.png">
 
