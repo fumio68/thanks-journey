@@ -1,8 +1,6 @@
 # README
 
-### アプリ名
-
-  **Thanks Journey**
+### アプリ名  Thanks Journey
 
   URL:https://thanks-journey.herokuapp.com/
   <img width="700" alt="スクリーンショット 2020-03-10 22 47 46" src="https://user-images.githubusercontent.com/59637985/76319184-2fc99780-6322-11ea-9fcd-af1c44b691aa.png">
