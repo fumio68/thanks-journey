@@ -5,9 +5,9 @@
   URL:https://thanks-journey.herokuapp.com/
 
   ※レスポンシブデザインにはまだ対応できていないため、パソコン画面でご覧ください
-  ![スクリーンショット 2020-03-10 22 47 46](https://user-images.githubusercontent.com/59637985/76703931-d3e38200-6718-11ea-99f0-9ab14f15e576.png)
+  <img width="700" alt="スクリーンショット 2020-03-10 22 47 46" src=”https://user-images.githubusercontent.com/59637985/76703931-d3e38200-6718-11ea-99f0-9ab14f15e576.png”>
 
-  ![スクリーンショット 2020-03-10 23 12 26](https://user-images.githubusercontent.com/59637985/76703939-e3fb6180-6718-11ea-8c09-a49db2119176.png)
+  <img width="700" alt="スクリーンショット 2020-03-10 23 12 26" src=”https://user-images.githubusercontent.com/59637985/76703939-e3fb6180-6718-11ea-8c09-a49db2119176.png”>
 
 
 ### 概要と目的
@@ -25,7 +25,7 @@
   Sign inで次のメールアドレスとパスワードを入力いただくとログインできます。
   - メールアドレス   test@gmail.com
   - パスワード   testpass
-  ![スクリーンショット 2020-03-10 22 57 39](https://user-images.githubusercontent.com/59637985/76703947-f9708b80-6718-11ea-9420-dd46f1bbf0fe.png)
+  <img width="500" alt="スクリーンショット 2020-03-10 22 57 39" src=”https://user-images.githubusercontent.com/59637985/76703947-f9708b80-6718-11ea-9420-dd46f1bbf0fe.png”>
 
 
 ### アプリの機能紹介
@@ -37,7 +37,7 @@
 
    - 投稿は本のアイコンから一覧でき、各投稿は編集、削除ができます
 
-  ![スクリーンショット 2020-03-10 22 50 21](https://user-images.githubusercontent.com/59637985/76703952-01303000-6719-11ea-90a2-89ccf536ecef.png)
+  <img width="700" alt="スクリーンショット 2020-03-10 22 50 21" src=”https://user-images.githubusercontent.com/59637985/76703952-01303000-6719-11ea-90a2-89ccf536ecef.png”>
 
    - ペンのアイコンからはユーザー情報の編集ができます
    - ベッドのアイコンはログアウトです
