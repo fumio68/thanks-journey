@@ -4,7 +4,7 @@
 
   URL:https://thanks-journey.herokuapp.com/
 
-  ※レスポンシブデザインにはまだ対応できていないため、パソコン画面でご覧ください
+  ※レスポンシブデザイン未対応のため、パソコン画面でご覧ください
   ![スクリーンショット 2020-03-10 22 47 46](https://user-images.githubusercontent.com/59637985/76703931-d3e38200-6718-11ea-99f0-9ab14f15e576.png)
 
   ![スクリーンショット 2020-03-10 23 12 26](https://user-images.githubusercontent.com/59637985/76703939-e3fb6180-6718-11ea-8c09-a49db2119176.png)
