@@ -221,15 +221,29 @@
 }
 
 // edit画面
-.edit-form__text{
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 1.2rem;
+.edit-form{
+  &__text{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.2rem;
+  }
+  &__image{
+    &__icon{
+        font-size:2rem;
+    }
+    &__file{
+      font-size: 1px;
+    }
+  }
+  &__btn{
+    background: #472b0e;
+    color: #fff;
+    font-family: 'Fredericka the Great', cursive;
+  }
 }
-.edit-form__image__icon{
-    font-size:2rem;
+.edit-image__data{
+  width: 100%;
+  height: 325px;
 }
-.edit-form__btn{
-  background: #472b0e;
-  color: #fff;
-  font-family: 'Fredericka the Great', cursive;
+.hide{
+  opacity: 0;
 }

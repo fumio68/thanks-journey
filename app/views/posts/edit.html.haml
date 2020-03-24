@@ -1,15 +1,20 @@
 .index__wrapper
   .index__sheet.mt-3
     .index__sheet__box
-      %h2.index__sheet__title.my-5 Edit log
+      %h2.index__sheet__title.my-4 Edit log
       .show-box
         = form_with model: @post, local: true do |f|
           .edit-form__textarea.form-group
-            =f.label "Type a new text",class:"edit-form__text"
-            =f.text_area :content, class:"edit-form__textarea__content form-control mb-5", placeholder:"Write about events you thanked!"
-          .edit-form__label.mb-5
-            =f.label "Choose a photo",class:"edit-form__text"
-            = f.label :image, class: "edit-form__image pl-5" do
+            .edit-form__text.mb-2 Type a new text
+            =f.text_area :content, class:"edit-form__textarea__content form-control mb-2", placeholder:"Write about events you thanked!"
+          .edit-form__label.mb-1
+            .edit-form__text.mb-2 Choose a photo
+            = f.label :image, class: "edit-form__image pl-4" do
               = icon('fa', 'image',class: "edit-form__image__icon")
-              = f.file_field :image, class: "edit-form__box__image__file invisible"
+              = f.file_field :image, class: "edit-form__image__file invisible"
+          .edit-image
+            -if @post.image?
+              = image_tag "#{@post.image}", class: "edit-image__data mb-3"
+            - else
+              = image_tag "", id:"hide", class: " hide mb-3"
           =f.submit "Save", class: "btn btn-dark px-4 edit-form__btn"
