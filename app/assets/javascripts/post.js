@@ -28,4 +28,15 @@ $(function(){
     })
   });
 
+  $('.edit-form__image__file').on('change', function (e) {
+    $("#hide").removeClass("hide");
+    $("#hide").addClass("edit-image__data");
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        $(".edit-image__data").attr('src', e.target.result);
+    }
+    reader.readAsDataURL(e.target.files[0]);
+});
+
+
 });
